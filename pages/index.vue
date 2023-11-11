@@ -24,7 +24,7 @@ watch(posts, (newPosts) => {
             <div class="flex flex-col items-center xl:border-r-2 border-b-2 xl:border-b-0">
                 <img class="object-cover rounded-full h-40 w-40" src="~/assets/img/Logo.png" alt="" />
                 <h2>{{ $t('heng_vina') }} {{ $t('founder') }}</h2>
-                <hr />
+                <div class="my-2"></div>
                 <h2>{{ $t('like') }}</h2>
             </div>
             <div class="xl:col-span-2">
