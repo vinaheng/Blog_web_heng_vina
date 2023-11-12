@@ -3,9 +3,7 @@
         <div class="border-b-[1px] bg-whit">
             <AppHeader />
         </div>
-        <NuxtLayout>
-            <NuxtPage />
-        </NuxtLayout>
+        <NuxtPage />
         <AppFooter />
     </div>
 </template>

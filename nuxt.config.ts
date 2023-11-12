@@ -23,4 +23,7 @@ export default defineNuxtConfig({
         ],
         defaultLocale: 'kh-KH',
     },
+    // app: {
+    //     pageTransition: { name: 'page', mode: 'out-in' },
+    // },
 });

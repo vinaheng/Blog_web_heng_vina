@@ -20,7 +20,7 @@ const localPath = useLocalePath();
         </li>
     </ul>
 </template>
-<style>
+<style scoped>
 .active {
     color: red;
     border-bottom: 3px solid red;

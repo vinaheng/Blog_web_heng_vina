@@ -15,13 +15,13 @@ function toggleDropdown() {
             class="border border-gray-400 rounded px-2 py-2 cursor-pointer relative"
         >
             <div class="flex gap-4">
-                <span>{{ locale === 'en-US' ? 'English-US' : 'ភាសារខ្មែរ' }}</span>
+                <span class="hidden xl:block">{{ locale === 'en-US' ? 'English-US' : 'ភាសារខ្មែរ' }}</span>
                 <span class="text-2xl"><IconsUsa v-if="locale === 'en-US'" /> <IconsCambodia v-else /></span>
             </div>
             <div
                 v-show="dropdownVisible"
                 id="dropdown-menu"
-                class="absolute top-[120%] border border-gray-300 bg-white shadow-md left-0"
+                class="absolute top-[120%] border border-gray-300 bg-white shadow-md right-0"
             >
                 <div
                     v-for="(item, index) in locales"

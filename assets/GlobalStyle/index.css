@@ -1,5 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@800&family=Roboto:wght@900&display=swap');
-.text-header,h2{
+.text-header,h2,span{
     font-family: 'Noto Sans Khmer', sans-serif;
 }
+/* .page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+} */
