@@ -1,4 +1,8 @@
 <script setup lang="ts">
+const title = ref('Aricles');
+useSeoMeta({
+    title,
+});
 interface Post {
     name: string;
     username: string;

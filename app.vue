@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="border-b-[1px] bg-whit">
+        <div class="w-full fixed top-0 border-b-2 bg-white z-10">
             <AppHeader />
         </div>
         <NuxtPage />

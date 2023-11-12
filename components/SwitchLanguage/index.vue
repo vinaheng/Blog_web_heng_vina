@@ -9,11 +9,7 @@ function toggleDropdown() {
 
 <template>
     <div class="flex items-center w-full">
-        <div
-            id="dropdown-button"
-            @click="toggleDropdown"
-            class="border border-gray-400 rounded px-2 py-2 cursor-pointer relative"
-        >
+        <div id="dropdown-button" @click="toggleDropdown" class="border-2 rounded p-2 cursor-pointer relative">
             <div class="flex gap-4">
                 <span class="hidden xl:block">{{ locale === 'en-US' ? 'English-US' : 'ភាសារខ្មែរ' }}</span>
                 <span class="text-2xl"><IconsUsa v-if="locale === 'en-US'" /> <IconsCambodia v-else /></span>

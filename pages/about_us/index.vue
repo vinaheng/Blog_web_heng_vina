@@ -1,4 +1,8 @@
 <script setup lang="ts">
+const title = ref('About_Us');
+useSeoMeta({
+    title,
+});
 interface Post {
     name: string;
     username: string;

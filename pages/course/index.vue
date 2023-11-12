@@ -1,4 +1,8 @@
 <script setup lang="ts">
+const title = ref('Lession');
+useSeoMeta({
+    title,
+});
 interface Post {
     name: string;
     username: string;

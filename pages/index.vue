@@ -1,5 +1,9 @@
 <script setup lang="ts">
 const localPath = useLocalePath();
+const title = ref('Home');
+useSeoMeta({
+    title,
+});
 </script>
 
 <template>
@@ -11,7 +15,12 @@ const localPath = useLocalePath();
         <img class="object-cover rounded-md max-h-[300px]" src="~/assets/img/front_cover.png" alt="" />
         <div class="mt-10 grid grid-cols-1 xl:grid-cols-3 gap-4 mb-10">
             <div class="flex flex-col items-center xl:border-r-2 border-b-2 xl:border-b-0 pb-2">
-                <img class="object-cover rounded-full h-40 w-40" src="~/assets/img/Logo.png" alt="" />
+                <div class="relative">
+                    <img class="object-cover rounded-full h-40 w-40" src="~/assets/img/Logo.png" alt="" />
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-20 top-0"
+                    ></span>
+                </div>
                 <h2>{{ $t('heng_vina') }} {{ $t('founder') }}</h2>
                 <div class="my-2"></div>
                 <h2>{{ $t('like') }}</h2>
@@ -67,3 +76,9 @@ const localPath = useLocalePath();
         <h2 class="flex justify-center text-xl">{{ $t('about_quote') }}</h2>
     </div>
 </template>
+<style>
+.button-transition {
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 1000ms ease-out; /* Apply the transition effect */
+}
+</style>
