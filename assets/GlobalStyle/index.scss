@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@800&family=Roboto:wght@900&display=swap');
+
+.text-header,
+h2,
+span {
+  font-family: 'Noto Sans Khmer', sans-serif;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.5s;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: scale(0%);
+  filter: blur(1rem);
+}
+
+/* #bar{
+  width: 100vw;
+  height: 10px;
+  transition: all linear .2s;
+  background-color: red;
+
+}
+::-webkit-scrollbar{
+  width: 0px;
+} */
