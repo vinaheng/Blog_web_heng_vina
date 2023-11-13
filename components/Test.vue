@@ -29,7 +29,7 @@ watch(posts, (newPosts) => {
                 v-else
                 class="text-blue-500 flex text-xl justify-center h-[75vh] items-center flex-col capitalize mx-4"
             >
-                <img class="w-[400px]" src="~/assets/img/fuck.jpg" alt="" />
+                <img class="w-[400px]" src="~/assets/img/fuck.png" alt="" />
                 <span class="mt-10">{{ $t('funny') }}</span>
             </div>
         </div>

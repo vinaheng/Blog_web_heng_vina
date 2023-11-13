@@ -67,6 +67,9 @@
                     </div>
                 </div>
             </div>
+            <div class="flex justify-center pb-4 text-gray-400">
+                <h2>{{ $t('copyright') }}</h2>
+            </div>
         </div>
     </transition>
 </template>

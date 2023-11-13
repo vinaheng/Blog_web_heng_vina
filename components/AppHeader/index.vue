@@ -14,10 +14,13 @@
             <!-- Menu Mobile -->
             <div class="flex gap-2 xl:hidden">
                 <SwitchLanguage />
-                <IconsMenu
-                    class="text-4xl hover:scale-105 transition-all dark:border-slate-800 border-[1px] rounded-md w-12 h-11"
+                <div
                     @click="toggleMenu()"
-                />
+                    class="text-4xl flex justify-center items-center hover:scale-105 transition-all dark:border-slate-800 border-[1px] rounded-md w-12 h-11"
+                >
+                    <IconsClose v-if="menuState" />
+                    <IconsMenu v-else />
+                </div>
             </div>
             <transition>
                 <MenuMobile

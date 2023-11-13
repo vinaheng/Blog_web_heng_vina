@@ -75,8 +75,8 @@ useSeoMeta({
                 <a href="">
                     <img class="max-h-10 hover:scale-105 transition-all" src="~/assets/img/youtube.png" alt="" />
                 </a>
-                <a href="">
-                    <img class="max-h-10 hover:scale-105 transition-all" src="~/assets/img/github.png" alt="" />
+                <a href="" class="dark:text-white">
+                    <IconsGithub />
                 </a>
             </div>
             <hr class="m-10 dark:border-slate-700" />
