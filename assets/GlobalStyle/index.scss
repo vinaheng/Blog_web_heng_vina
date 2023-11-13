@@ -24,9 +24,22 @@ span {
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
-  transform: scale(0%);
+  transform: scaleX(80%);
   filter: blur(1rem);
 }
+
+.header-enter-active,
+.header-leave-active {
+  transition: all 0.4s;
+}
+
+.dark-enter-from,
+.dark-leave-to {
+  opacity: 0;
+  transform: scaleyY(0%);
+  filter: blur(1rem);
+}
+
 
 /* #bar{
   width: 100vw;
