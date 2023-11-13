@@ -14,22 +14,24 @@ function toggleDropdown() {
                 <span class="hidden xl:block">{{ locale === 'en-US' ? 'English-US' : 'ភាសារខ្មែរ' }}</span>
                 <span class="text-2xl"><IconsUsa v-if="locale === 'en-US'" /> <IconsCambodia v-else /></span>
             </div>
-            <div
-                v-show="dropdownVisible"
-                id="dropdown-menu"
-                class="absolute top-[120%] border border-gray-300 bg-white shadow-md right-0"
-            >
+            <transition>
                 <div
-                    v-for="(item, index) in locales"
-                    :key="index"
-                    class="py-2 px-2 cursor-pointer hover:bg-gray-100 flex justify-between items-center"
-                    @click="setLocale(item.code)"
+                    v-show="dropdownVisible"
+                    id="dropdown-menu"
+                    class="absolute top-[120%] border border-gray-300 bg-white shadow-md right-0"
                 >
-                    <span class="mr-2">{{ item.name }} </span>
-                    <span class="text-2xl" v-if="item.code === 'en-US'"><IconsUsa /></span>
-                    <span class="text-2xl" v-else><IconsCambodia /></span>
+                    <div
+                        v-for="(item, index) in locales"
+                        :key="index"
+                        class="py-2 px-2 cursor-pointer hover:bg-gray-100 flex justify-between items-center"
+                        @click="setLocale(item.code)"
+                    >
+                        <span class="mr-2">{{ item.name }} </span>
+                        <span class="text-2xl" v-if="item.code === 'en-US'"><IconsUsa /></span>
+                        <span class="text-2xl" v-else><IconsCambodia /></span>
+                    </div>
                 </div>
-            </div>
+            </transition>
         </div>
     </div>
 </template>

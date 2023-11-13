@@ -1,8 +1,6 @@
-<script setup lang="ts">
-const { menuState, toggleMenu } = useMenu();
-</script>
 <template>
-    <div class="container m-auto flex items-center text-header justify-between px-4">
+    <div class="container m-auto flex items-center text-header justify-between px-4 relative">
+        <!-- <div id="bar" class="absolute z-30 top-0"></div> -->
         <NuxtLink to="/"><img src="~/assets/img/Blog_pic.svg" class="h-14" alt="" /></NuxtLink>
         <div class="flex gap-10">
             <Menu class="hidden xl:flex" />
@@ -20,10 +18,35 @@ const { menuState, toggleMenu } = useMenu();
                 @click="toggleMenu()"
             />
         </div>
-        <MenuMobile
-            @click="toggleMenu()"
-            v-show="menuState"
-            class="absolute top-[100%] z-10 right-0 xl:hidden block ease-in-out duration-300"
-        />
+        <transition>
+            <MenuMobile
+                @click="toggleMenu()"
+                v-if="menuState"
+                class="absolute top-[100%] z-10 right-0 xl:hidden block ease-in-out duration-300"
+            />
+        </transition>
     </div>
 </template>
+<script setup lang="ts">
+const { menuState, toggleMenu } = useMenu();
+// let scr = 0;
+// let progress = 0;
+// const fullHeight = ref(document.body.scrollHeight - window.innerHeight);
+// const handleScroll = () => {
+//     scr = window.scrollY;
+//     progress = (scr / fullHeight.value) * 100;
+//     document.getElementById('bar').style.width = `${progress}vw`;
+// };
+
+// onMounted(() => {
+//     window.addEventListener('scroll', handleScroll);
+// });
+
+// onUnmounted(() => {
+//     window.removeEventListener('scroll', handleScroll);
+// });
+const title = ref('Lesson');
+useSeoMeta({
+    title,
+});
+</script>

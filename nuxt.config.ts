@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    css: ['~/assets/GlobalStyle/index.css'],
+    css: ['~/assets/GlobalStyle/index.scss'],
     modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n'],
     i18n: {
         /* module options */

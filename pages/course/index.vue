@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const title = ref('Lession');
+const title = ref('About_Us');
 useSeoMeta({
     title,
 });
@@ -16,12 +16,22 @@ watch(posts, (newPosts) => {
 </script>
 
 <template>
-    <div v-if="pending" class="text-blue-500 flex text-xl justify-center h-[75vh] items-center flex-col capitalize">
-        <IconsLoading class="text-9xl" />
-        <span>{{ $t('loading') }}</span>
-    </div>
-    <div v-else class="text-blue-500 flex text-xl justify-center h-[75vh] items-center flex-col capitalize mx-4">
-        <img class="w-[400px]" src="~/assets/img/fuck.jpg" alt="" />
-        <span class="mt-10">{{ $t('funny') }}</span>
-    </div>
+    <transition appear name="page">
+        <div v-show="true">
+            <div
+                v-if="pending"
+                class="text-blue-500 flex text-xl justify-center h-[75vh] items-center flex-col capitalize"
+            >
+                <IconsLoading class="text-9xl" />
+                <span>{{ $t('loading') }}</span>
+            </div>
+            <div
+                v-else
+                class="text-blue-500 flex text-xl justify-center h-[75vh] items-center flex-col capitalize mx-4"
+            >
+                <img class="w-[400px]" src="~/assets/img/fuck.jpg" alt="" />
+                <span class="mt-10">{{ $t('funny') }}</span>
+            </div>
+        </div>
+    </transition>
 </template>
