@@ -17,7 +17,7 @@ export default defineNuxtConfig({
                 name: 'English(US)',
             },
         ],
-        defaultLocale: 'kh',
+        // defaultLocale: 'kh',
         vueI18n: './i18n.config.ts',
     },
 });
