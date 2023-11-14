@@ -42,13 +42,14 @@ span {
 }
 
 
-/* #bar{
+#bar {
   width: 100vw;
-  height: 10px;
+  height: 1px;
   transition: all linear .2s;
   background-color: red;
 
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   width: 0px;
-} */
+}
