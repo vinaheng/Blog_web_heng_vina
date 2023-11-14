@@ -15,8 +15,8 @@ function toggleDropdown() {
             class="rounded-md p-2 cursor-pointer relative dark:border-slate-700 border-[1px] dark:text-white"
         >
             <div class="flex gap-4">
-                <span class="hidden xl:block">{{ locale === 'en-US' ? 'English-US' : 'ភាសារខ្មែរ' }}</span>
-                <span class="text-2xl"><IconsUsa v-if="locale === 'en-US'" /> <IconsCambodia v-else /></span>
+                <span class="hidden xl:block">{{ locale === 'en' ? 'English-US' : 'ភាសារខ្មែរ' }}</span>
+                <span class="text-2xl"><IconsUsa v-if="locale === 'en'" /> <IconsCambodia v-else /></span>
             </div>
             <transition>
                 <div
@@ -31,7 +31,7 @@ function toggleDropdown() {
                         @click="setLocale(item.code)"
                     >
                         <span class="mr-2">{{ item.name }} </span>
-                        <span class="text-2xl" v-if="item.code === 'en-US'"><IconsUsa /></span>
+                        <span class="text-2xl" v-if="item.code === 'en'"><IconsUsa /></span>
                         <span class="text-2xl" v-else><IconsCambodia /></span>
                     </div>
                 </div>
