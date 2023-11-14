@@ -11,10 +11,12 @@ export default defineNuxtConfig({
             {
                 code: 'kh',
                 name: 'ភាសារខ្មែរ',
+                iso: 'en-US',
             },
             {
                 code: 'en',
                 name: 'English(US)',
+                iso: 'kh-KH',
             },
         ],
         // defaultLocale: 'kh',

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const localPath = useLocalePath();
-const title = ref('Home');
+const { t } = useI18n();
 useSeoMeta({
-    title,
+    title: t('home'),
 });
 </script>
 
