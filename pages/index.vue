@@ -2,7 +2,7 @@
 const localPath = useLocalePath();
 const { t } = useI18n();
 useSeoMeta({
-    title: t('home'),
+    title: '💁‍♂️Vina Blog👉' + t('home') + '💞',
 });
 </script>
 
@@ -33,7 +33,9 @@ useSeoMeta({
                     <div class="m-auto">
                         <h2>{{ $t('blog_mission') }}</h2>
                         <hr class="mt-2 dark:border-slate-700" />
-                        <div class="flex flex-col font-bold text-header mt-4 text-red-600 capitalize">
+                        <div
+                            class="flex flex-col font-bold text-header mt-4 text-red-600 dark:text-yellow-400 capitalize"
+                        >
                             <NuxtLink class="flex items-center" activeClass="active" :to="localPath('/course')">
                                 {{ $t('course') }} <IconsNext />
                             </NuxtLink>

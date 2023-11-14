@@ -22,7 +22,10 @@ const localPath = useLocalePath();
 </template>
 <style scoped>
 .active {
-    color: red;
-    border-bottom: 3px solid red;
+    @apply text-red-600  dark:text-yellow-400
+    pb-4   
+    border-l-[5px] border-l-transparent
+    border-b-[1px] border-b-red-600 dark:border-b-yellow-400
+    border-r-[5px] border-r-transparent;
 }
 </style>

@@ -1,8 +1,4 @@
 <script setup lang="ts">
-const title = ref('Fuck You');
-useSeoMeta({
-    title,
-});
 interface Post {
     name: string;
     username: string;
