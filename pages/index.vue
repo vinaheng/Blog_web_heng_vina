@@ -7,6 +7,7 @@ useSeoMeta({
 </script>
 
 <template>
+    <vue-scroll-indicator height="7px" color="#11998e" background="none"> </vue-scroll-indicator>
     <transition appear name="page">
         <div v-show="true" class="max-w-[700px] m-auto flex flex-col justify-center p-5 pt-20 mt-14 dark:text-white">
             <img class="object-cover rounded-md max-h-[300px]" src="~/assets/img/front_cover.png" alt="" />

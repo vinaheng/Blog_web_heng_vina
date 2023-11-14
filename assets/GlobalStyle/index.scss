@@ -42,11 +42,11 @@ span {
 }
 
 
-#bar {
+#reading_progress {
   width: 100vw;
-  height: 1px;
+  height: 2px;
   transition: all linear .2s;
-  background-color: red;
+  background: linear-gradient(90deg, #ff0000 10%, rgb(0, 255, 38) 90%);
 
 }
 
