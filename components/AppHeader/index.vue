@@ -18,11 +18,11 @@
                 <SwitchLanguage />
                 <div
                     @click="toggleMenu"
-                    class="relative toggle_menu text-4xl flex justify-center items-center hover:scale-105 transition-all dark:border-slate-800 border-[1px] rounded-md w-12 h-11 cursor-pointer"
+                    class="toggle_menu text-4xl flex justify-center items-center hover:scale-105 transition-all dark:border-slate-800 border-[1px] rounded-md w-12 h-11 cursor-pointer"
                 >
                     <transition mode="out-in">
-                        <IconsClose v-if="menuCheck" class="w-12 h-11 text" />
-                        <IconsMenu v-else class="w-12 h-11 disabled:true" />
+                        <IconsClose v-if="menuCheck" class="w-12 h-11" />
+                        <IconsMenu v-else class="w-12 h-11" />
                     </transition>
                 </div>
             </div>
@@ -40,15 +40,11 @@
 const menuCheck = ref(false);
 //
 onMounted(() => {
-    window.addEventListener('scroll', () => (menuCheck.value = false));
-    window.addEventListener('click', (event) => {
-        if (event.target.className != '[object SVGAnimatedString]' && menuCheck.value) {
-            toggleMenu();
-        }
+    window.addEventListener('click', function (event) {
+        if (event.target.id !== `toggle-menu`) menuCheck.value = false;
     });
+    window.addEventListener('scroll', () => (menuCheck.value = false));
 });
-// const { menuState, toggleMenu } = useMenu();
-
 function toggleMenu(event) {
     menuCheck.value = !menuCheck.value;
 }
