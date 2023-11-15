@@ -1,5 +1,5 @@
 <template>
-    <transition appear name="header">
+    <transition appear>
         <div v-show="true" class="container m-auto flex items-center text-header justify-between px-4 relative">
             <NuxtLink to="/"><img src="~/assets/img/Blog_pic.svg" class="h-14" alt="" /></NuxtLink>
             <div class="flex gap-10">
@@ -20,8 +20,10 @@
                     @click="toggleMenu()"
                     class="text-4xl flex justify-center items-center hover:scale-105 transition-all dark:border-slate-800 border-[1px] rounded-md w-12 h-11"
                 >
-                    <IconsClose v-if="menuState" />
-                    <IconsMenu v-else />
+                    <transition mode="out-in">
+                        <IconsClose v-if="menuState" />
+                        <IconsMenu v-else />
+                    </transition>
                 </div>
             </div>
             <transition>

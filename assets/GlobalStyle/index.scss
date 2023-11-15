@@ -29,21 +29,8 @@ span {
   filter: blur(1rem);
 }
 
-.header-enter-active,
-.header-leave-active {
-  transition: all 0.4s;
-}
-
-.dark-enter-from,
-.dark-leave-to {
-  opacity: 0;
-  transform: scaleyY(0%);
-  filter: blur(1rem);
-}
-
 
 #reading_progress {
-  width: 100vw;
   height: 2px;
   transition: all linear .2s;
   background: linear-gradient(90deg, #ff0000 10%, rgb(0, 255, 38) 90%);
