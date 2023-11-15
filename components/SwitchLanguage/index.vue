@@ -5,6 +5,14 @@ const dropdownVisible = ref(false);
 function toggleDropdown() {
     dropdownVisible.value = !dropdownVisible.value;
 }
+onMounted(() => {
+    window.addEventListener('scroll', () => (dropdownVisible.value = false));
+    window.addEventListener('click', (event) => {
+        if (event.target.className != '[object SVGAnimatedString]' && dropdownVisible.value) {
+            toggleDropdown();
+        }
+    });
+});
 </script>
 
 <template>
