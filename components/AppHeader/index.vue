@@ -17,25 +17,39 @@
             <div class="flex gap-2 xl:hidden">
                 <SwitchLanguage />
                 <div
-                    @click="toggleMenu()"
-                    class="text-4xl flex justify-center items-center hover:scale-105 transition-all dark:border-slate-800 border-[1px] rounded-md w-12 h-11"
+                    @click="toggleMenu"
+                    class="relative toggle_menu text-4xl flex justify-center items-center hover:scale-105 transition-all dark:border-slate-800 border-[1px] rounded-md w-12 h-11 cursor-pointer"
                 >
                     <transition mode="out-in">
-                        <IconsClose v-if="menuState" />
-                        <IconsMenu v-else />
+                        <IconsClose v-if="menuCheck" class="w-12 h-11 text" />
+                        <IconsMenu v-else class="w-12 h-11 disabled:true" />
                     </transition>
                 </div>
             </div>
             <transition>
                 <MenuMobile
-                    @click="toggleMenu()"
-                    v-if="menuState"
+                    @click="toggleMenu"
+                    v-if="menuCheck"
                     class="absolute top-[100%] z-10 right-0 xl:hidden block ease-in-out duration-300"
                 />
             </transition>
         </div>
     </transition>
 </template>
-<script setup lang="ts">
-const { menuState, toggleMenu } = useMenu();
+<script setup>
+const menuCheck = ref(false);
+//
+onMounted(() => {
+    window.addEventListener('scroll', () => (menuCheck.value = false));
+    window.addEventListener('click', (event) => {
+        if (event.target.className != '[object SVGAnimatedString]' && menuCheck.value) {
+            toggleMenu();
+        }
+    });
+});
+// const { menuState, toggleMenu } = useMenu();
+
+function toggleMenu(event) {
+    menuCheck.value = !menuCheck.value;
+}
 </script>
