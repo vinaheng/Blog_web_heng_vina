@@ -1,261 +1,219 @@
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512">
-        <defs>
-            <linearGradient
-                id="meteoconsOvercastDaySnowFill0"
-                x1="99.5"
-                x2="232.6"
-                y1="30.7"
-                y2="261.4"
-                gradientUnits="userSpaceOnUse"
-            >
-                <stop offset="0" stopColor="#f3f7fe"></stop>
-                <stop offset=".5" stopColor="#f3f7fe"></stop>
-                <stop offset="1" stopColor="#deeafb"></stop>
-            </linearGradient>
-            <linearGradient
-                id="meteoconsOvercastDaySnowFill1"
-                x1="52.7"
-                x2="133.4"
-                y1="9.6"
-                y2="149.3"
-                gradientUnits="userSpaceOnUse"
-            >
-                <stop offset="0" stopColor="#9ca3af"></stop>
-                <stop offset=".5" stopColor="#9ca3af"></stop>
-                <stop offset="1" stopColor="#6b7280"></stop>
-            </linearGradient>
-            <linearGradient
-                id="meteoconsOvercastDaySnowFill2"
-                x1="11.4"
-                x2="32.8"
-                y1="5.9"
-                y2="43.1"
-                gradientUnits="userSpaceOnUse"
-            >
-                <stop offset="0" stopColor="#86c3db"></stop>
-                <stop offset=".5" stopColor="#86c3db"></stop>
-                <stop offset="1" stopColor="#5eafcf"></stop>
-            </linearGradient>
-            <linearGradient
-                id="meteoconsOvercastDaySnowFill3"
-                x1="67.4"
-                x2="88.8"
-                y1="5.9"
-                y2="43.1"
-                href="#meteoconsOvercastDaySnowFill2"
-            ></linearGradient>
-            <linearGradient
-                id="meteoconsOvercastDaySnowFill4"
-                x1="123.4"
-                x2="144.8"
-                y1="5.9"
-                y2="43.1"
-                href="#meteoconsOvercastDaySnowFill2"
-            ></linearGradient>
-            <linearGradient
-                id="meteoconsOvercastDaySnowFill5"
-                x1="78"
-                x2="118"
-                y1="63.4"
-                y2="132.7"
-                gradientUnits="userSpaceOnUse"
-            >
-                <stop offset="0" stopColor="#fbbf24"></stop>
-                <stop offset=".5" stopColor="#fbbf24"></stop>
-                <stop offset="1" stopColor="#f59e0b"></stop>
-            </linearGradient>
-            <symbol id="meteoconsOvercastDaySnowFill6" viewBox="0 0 196 196">
-                <circle
-                    cx="98"
-                    cy="98"
-                    r="40"
-                    fill="url(#meteoconsOvercastDaySnowFill5)"
-                    stroke="#f8af18"
-                    stroke-miterlimit="10"
-                    stroke-width="4"
-                ></circle>
-                <path
-                    fill="none"
-                    stroke="#fbbf24"
-                    stroke-linecap="round"
-                    stroke-miterlimit="10"
-                    stroke-width="12"
-                    d="M98 31.4V6m0 184v-25.4M145.1 51l18-17.9M33 163l18-17.9M51 51L33 33m130.1 130.1l-18-18M6 98h25.4M190 98h-25.4"
-                >
-                    <animateTransform
-                        additive="sum"
-                        attributeName="transform"
-                        dur="6s"
-                        repeatCount="indefinite"
-                        type="rotate"
-                        values="0 98 98; 45 98 98"
-                    ></animateTransform>
-                </path>
-            </symbol>
-            <symbol id="meteoconsOvercastDaySnowFill7" viewBox="0 0 200.3 126.1">
-                <path
-                    fill="url(#meteoconsOvercastDaySnowFill1)"
-                    stroke="#fff"
-                    stroke-miterlimit="10"
-                    d="M.5 93.2a32.4 32.4 0 0 0 32.4 32.4h129.8v-.1l2.3.1a34.8 34.8 0 0 0 6.5-68.9a32.4 32.4 0 0 0-48.5-33a48.6 48.6 0 0 0-88.6 37.1h-1.5A32.4 32.4 0 0 0 .5 93.1Z"
-                ></path>
-            </symbol>
-            <symbol id="meteoconsOvercastDaySnowFill8" viewBox="0 0 350 222">
-                <path
-                    fill="url(#meteoconsOvercastDaySnowFill0)"
-                    stroke="#e6effc"
-                    stroke-miterlimit="10"
-                    stroke-width="6"
-                    d="m291 107l-2.5.1A83.9 83.9 0 0 0 135.6 43A56 56 0 0 0 51 91a56.6 56.6 0 0 0 .8 9A60 60 0 0 0 63 219l4-.2v.2h224a56 56 0 0 0 0-112Z"
-                ></path>
-            </symbol>
-            <symbol id="meteoconsOvercastDaySnowFill9" viewBox="0 0 398 222">
-                <use width="200.3" height="126.1" href="#meteoconsOvercastDaySnowFill7" transform="translate(198 27)">
-                    <animateTransform
-                        additive="sum"
-                        attributeName="transform"
-                        dur="6s"
-                        repeatCount="indefinite"
-                        type="translate"
-                        values="-9 0; 9 0; -9 0"
-                    ></animateTransform>
-                </use>
-                <use width="350" height="222" href="#meteoconsOvercastDaySnowFill8">
-                    <animateTransform
-                        additive="sum"
-                        attributeName="transform"
-                        dur="6s"
-                        repeatCount="indefinite"
-                        type="translate"
-                        values="-18 0; 18 0; -18 0"
-                    ></animateTransform>
-                </use>
-            </symbol>
-            <symbol id="meteoconsOvercastDaySnowFilla" viewBox="0 0 410.8 258">
-                <use width="196" height="196" href="#meteoconsOvercastDaySnowFill6"></use>
-                <use
-                    width="398"
-                    height="222"
-                    href="#meteoconsOvercastDaySnowFill9"
-                    transform="translate(12.84 36)"
-                ></use>
-            </symbol>
-            <symbol id="meteoconsOvercastDaySnowFillb" viewBox="0 0 156.2 49">
-                <g>
-                    <path
-                        fill="url(#meteoconsOvercastDaySnowFill2)"
-                        stroke="#86c3db"
-                        stroke-miterlimit="10"
-                        d="m41.7 31l-5.8-3.3a13.7 13.7 0 0 0 0-6.5l5.8-3.2a4 4 0 0 0 1.5-5.5a4 4 0 0 0-5.6-1.5l-5.8 3.3a13.6 13.6 0 0 0-2.6-2a13.8 13.8 0 0 0-3-1.3V4.5a4 4 0 0 0-8.1 0v6.6a14.3 14.3 0 0 0-5.7 3.2L6.6 11A4 4 0 0 0 1 12.5A4 4 0 0 0 2.5 18l5.8 3.3a13.7 13.7 0 0 0 0 6.5L2.5 31A4 4 0 0 0 1 36.5a4 4 0 0 0 3.5 2a4 4 0 0 0 2-.5l5.8-3.3a13.6 13.6 0 0 0 2.6 2a13.8 13.8 0 0 0 3 1.2v6.6a4 4 0 0 0 8.2 0v-6.6a14.2 14.2 0 0 0 5.6-3.2l6 3.3a4 4 0 0 0 2 .5a4 4 0 0 0 3.4-2a4 4 0 0 0-1.4-5.5ZM19 29.7a6 6 0 0 1-2.3-8.2a6.1 6.1 0 0 1 5.3-3a6.2 6.2 0 0 1 3 .8a6 6 0 0 1 2.2 8.2a6.1 6.1 0 0 1-8.2 2.2Z"
-                        opacity="0"
-                    >
-                        <animateTransform
-                            additive="sum"
-                            attributeName="transform"
-                            dur="6s"
-                            repeatCount="indefinite"
-                            type="rotate"
-                            values="0 24 24; 360 24 24"
-                        ></animateTransform>
-                        <animate
-                            id="meteoconsOvercastDaySnowFillc"
-                            attributeName="opacity"
-                            begin="0s; t1.end+1s"
-                            dur="2s"
-                            keyTimes="0; .17; .83; 1"
-                            values="0; 1; 1; 0"
-                        ></animate>
-                    </path>
-                    <animateTransform
-                        id="meteoconsOvercastDaySnowFilld"
-                        additive="sum"
-                        attributeName="transform"
-                        begin="0s; s1.end+1s"
-                        dur="2s"
-                        type="translate"
-                        values="0 -36; 0 92;"
-                    ></animateTransform>
-                </g>
-                <g>
-                    <path
-                        fill="url(#meteoconsOvercastDaySnowFill3)"
-                        stroke="#86c3db"
-                        stroke-miterlimit="10"
-                        d="m97.7 31l-5.8-3.3a13.7 13.7 0 0 0 0-6.5l5.8-3.2a4 4 0 0 0 1.5-5.5a4 4 0 0 0-5.6-1.5l-5.8 3.3a13.6 13.6 0 0 0-2.6-2a13.8 13.8 0 0 0-3-1.3V4.5a4 4 0 0 0-8.1 0v6.6a14.3 14.3 0 0 0-5.7 3.2L62.6 11a4 4 0 0 0-5.6 1.5a4 4 0 0 0 1.5 5.5l5.8 3.3a13.7 13.7 0 0 0 0 6.5L58.5 31a4 4 0 0 0-1.5 5.5a4 4 0 0 0 3.5 2a4 4 0 0 0 2-.5l5.8-3.3a13.6 13.6 0 0 0 2.7 2a13.8 13.8 0 0 0 3 1.2v6.6a4 4 0 0 0 8 0v-6.6a14.2 14.2 0 0 0 5.7-3.2l6 3.3a4 4 0 0 0 2 .5a4 4 0 0 0 3.4-2a4 4 0 0 0-1.4-5.5ZM75 29.7a6 6 0 0 1-2.3-8.2a6.1 6.1 0 0 1 5.3-3a6.2 6.2 0 0 1 3 .8a6 6 0 0 1 2.2 8.2a6.1 6.1 0 0 1-8.2 2.2Z"
-                        opacity="0"
-                    >
-                        <animateTransform
-                            additive="sum"
-                            attributeName="transform"
-                            dur="6s"
-                            repeatCount="indefinite"
-                            type="rotate"
-                            values="0 80 24; 360 80 24"
-                        ></animateTransform>
-                        <animate
-                            id="meteoconsOvercastDaySnowFille"
-                            attributeName="opacity"
-                            begin="-.83s; t2.end+1s"
-                            dur="2s"
-                            keyTimes="0; .17; .83; 1"
-                            values="0; 1; 1; 0"
-                        ></animate>
-                    </path>
-                    <animateTransform
-                        id="meteoconsOvercastDaySnowFillf"
-                        additive="sum"
-                        attributeName="transform"
-                        begin="-.83s; s2.end+1s"
-                        dur="2s"
-                        type="translate"
-                        values="0 -36; 0 92;"
-                    ></animateTransform>
-                </g>
-                <g>
-                    <path
-                        fill="url(#meteoconsOvercastDaySnowFill4)"
-                        stroke="#86c3db"
-                        stroke-miterlimit="10"
-                        d="m153.7 31l-5.8-3.3a13.7 13.7 0 0 0 0-6.5l5.8-3.2a4 4 0 0 0 1.5-5.5a4 4 0 0 0-5.6-1.5l-5.8 3.3a13.6 13.6 0 0 0-2.6-2a13.8 13.8 0 0 0-3-1.3V4.5a4 4 0 0 0-8.1 0v6.6a14.3 14.3 0 0 0-5.7 3.2l-5.8-3.3a4 4 0 0 0-5.6 1.5a4 4 0 0 0 1.5 5.5l5.8 3.3a13.7 13.7 0 0 0 0 6.5l-5.8 3.2a4 4 0 0 0-1.5 5.5a4 4 0 0 0 3.5 2a4 4 0 0 0 2-.5l5.8-3.3a13.6 13.6 0 0 0 2.7 2a13.8 13.8 0 0 0 3 1.2v6.6a4 4 0 0 0 8 0v-6.6a14.2 14.2 0 0 0 5.7-3.2l5.8 3.3a4 4 0 0 0 2 .5a4 4 0 0 0 3.5-2a4 4 0 0 0-1.3-5.5ZM131 29.7a6 6 0 0 1-2.3-8.2a6.1 6.1 0 0 1 5.3-3a6.2 6.2 0 0 1 3 .8a6 6 0 0 1 2.2 8.2a6.1 6.1 0 0 1-8.2 2.2Z"
-                        opacity="0"
-                    >
-                        <animateTransform
-                            additive="sum"
-                            attributeName="transform"
-                            dur="6s"
-                            repeatCount="indefinite"
-                            type="rotate"
-                            values="0 136 24; 360 136 24"
-                        ></animateTransform>
-                        <animate
-                            id="meteoconsOvercastDaySnowFillg"
-                            attributeName="opacity"
-                            begin=".83s; t3.end+1s"
-                            dur="2s"
-                            keyTimes="0; .17; .83; 1"
-                            values="0; 1; 1; 0"
-                        ></animate>
-                    </path>
-                    <animateTransform
-                        id="meteoconsOvercastDaySnowFillh"
-                        additive="sum"
-                        attributeName="transform"
-                        begin=".83s; s3.end+1s"
-                        dur="2s"
-                        type="translate"
-                        values="0 -36; 0 92;"
-                    ></animateTransform>
-                </g>
-            </symbol>
-        </defs>
-        <use width="410.8" height="258" href="#meteoconsOvercastDaySnowFilla" transform="translate(56 109)"></use>
-        <use width="156.2" height="49" href="#meteoconsOvercastDaySnowFillb" transform="translate(177.9 337.5)"></use>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+        width="30"
+        height="30"
+        viewBox="0 0 256 256"
+        xml:space="preserve"
+    >
+        <defs></defs>
+        <g
+            style="
+                stroke: none;
+                stroke-width: 0;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: none;
+                fill-rule: nonzero;
+                opacity: 1;
+            "
+            transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+        >
+            <circle
+                cx="45"
+                cy="45"
+                r="45"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform="  matrix(1 0 0 1 0 0) "
+            />
+            <path
+                d="M 38.81 51.19 c -9.155 -9.155 -10.308 -23.282 -3.46 -33.69 c -3.454 1.393 -6.692 3.488 -9.492 6.288 c -11.144 11.144 -11.144 29.211 0 40.354 s 29.211 11.144 40.354 0 c 2.8 -2.8 4.895 -6.037 6.288 -9.492 C 62.092 61.499 47.965 60.346 38.81 51.19 z"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(252, 213, 126);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+            />
+            <path
+                d="M 55.218 41.106 c -1.083 -3.251 -3.654 -5.822 -6.905 -6.906 c -0.542 -0.181 -0.542 -0.934 0 -1.115 c 3.251 -1.083 5.822 -3.654 6.905 -6.905 c 0.181 -0.542 0.934 -0.542 1.115 0 c 1.083 3.251 3.654 5.822 6.906 6.905 c 0.542 0.18 0.542 0.934 0 1.115 c -3.251 1.083 -5.822 3.655 -6.906 6.906 C 56.153 41.648 55.399 41.648 55.218 41.106 z"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(234, 239, 244);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+            />
+            <circle
+                cx="78.165"
+                cy="41.515"
+                r="1.165"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(234, 239, 244);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform="  matrix(1 0 0 1 0 0) "
+            />
+            <circle
+                cx="39.665"
+                cy="82.305"
+                r="1.165"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(234, 239, 244);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform="  matrix(1 0 0 1 0 0) "
+            />
+            <circle
+                cx="45.005"
+                cy="12.645"
+                r="1.165"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(234, 239, 244);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform="  matrix(1 0 0 1 0 0) "
+            />
+            <circle
+                cx="56.945"
+                cy="51.095"
+                r="1.165"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(234, 239, 244);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform="  matrix(1 0 0 1 0 0) "
+            />
+            <circle
+                cx="9.094999999999999"
+                cy="33.644999999999996"
+                r="1.165"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(234, 239, 244);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform="  matrix(1 0 0 1 0 0) "
+            />
+            <circle
+                cx="70.235"
+                cy="76.20500000000001"
+                r="1.165"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(234, 239, 244);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform="  matrix(1 0 0 1 0 0) "
+            />
+            <circle
+                cx="69.075"
+                cy="14.975000000000001"
+                r="1.165"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(234, 239, 244);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform="  matrix(1 0 0 1 0 0) "
+            />
+            <circle
+                cx="16.335"
+                cy="59.885"
+                r="1.165"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(234, 239, 244);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform="  matrix(1 0 0 1 0 0) "
+            />
+        </g>
     </svg>
 </template>
 
 <script lang="ts">
 export default {
-    name: 'MeteoconsOvercastDaySnowFill',
+    name: 'MeteoconsTimeNightFill',
 };
 </script>

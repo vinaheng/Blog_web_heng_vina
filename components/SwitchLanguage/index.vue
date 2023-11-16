@@ -8,7 +8,6 @@ function toggleDropdown() {
 onMounted(() => {
     window.addEventListener('scroll', () => (dropdownVisible.value = false));
     window.addEventListener('click', (event) => {
-        console.log(event.target);
         if (event.target.id !== `toggle-switch-langauge`) dropdownVisible.value = false;
     });
 });

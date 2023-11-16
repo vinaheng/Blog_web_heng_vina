@@ -15,7 +15,12 @@ const localPath = useLocalePath();
             :to="localPath('/')"
             >{{ $t('home') }}</NuxtLink
         >
-
+        <NuxtLink
+            class="hover:bg-gray-200 hover:rounded-md hover:dark:bg-slate-800 p-2"
+            activeClass="active"
+            :to="localPath('/shop')"
+            >{{ $t('shop') }}</NuxtLink
+        >
         <NuxtLink
             class="hover:bg-gray-200 hover:rounded-md hover:dark:bg-slate-800 p-2"
             activeClass="active"

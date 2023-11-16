@@ -1,234 +1,370 @@
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512">
-        <defs>
-            <linearGradient
-                id="meteoconsExtremeDayRainFill0"
-                x1="52.7"
-                x2="133.4"
-                y1="9.6"
-                y2="149.3"
-                gradientUnits="userSpaceOnUse"
-            >
-                <stop offset="0" stopColor="#9ca3af"></stop>
-                <stop offset=".5" stopColor="#9ca3af"></stop>
-                <stop offset="1" stopColor="#6b7280"></stop>
-            </linearGradient>
-            <linearGradient
-                id="meteoconsExtremeDayRainFill1"
-                x1="99.5"
-                x2="232.6"
-                y1="30.7"
-                y2="261.4"
-                gradientUnits="userSpaceOnUse"
-            >
-                <stop offset="0" stopColor="#6b7280"></stop>
-                <stop offset=".5" stopColor="#6b7280"></stop>
-                <stop offset="1" stopColor="#4b5563"></stop>
-            </linearGradient>
-            <linearGradient
-                id="meteoconsExtremeDayRainFill2"
-                x1="1381.3"
-                x2="1399.5"
-                y1="-1144.7"
-                y2="-1097.4"
-                gradientTransform="rotate(-9 8002.567 8233.063)"
-                gradientUnits="userSpaceOnUse"
-            >
-                <stop offset="0" stopColor="#0b65ed"></stop>
-                <stop offset=".5" stopColor="#0a5ad4"></stop>
-                <stop offset="1" stopColor="#0950bc"></stop>
-            </linearGradient>
-            <linearGradient
-                id="meteoconsExtremeDayRainFill3"
-                x1="1436.7"
-                x2="1454.9"
-                y1="-1137"
-                y2="-1089.7"
-                gradientTransform="rotate(-9 8009.537 8233.037)"
-                href="#meteoconsExtremeDayRainFill2"
-            ></linearGradient>
-            <linearGradient
-                id="meteoconsExtremeDayRainFill4"
-                x1="1492.1"
-                x2="1510.3"
-                y1="-1129.3"
-                y2="-1082.1"
-                gradientTransform="rotate(-9 8016.566 8233.078)"
-                href="#meteoconsExtremeDayRainFill2"
-            ></linearGradient>
-            <linearGradient
-                id="meteoconsExtremeDayRainFill5"
-                x1="78"
-                x2="118"
-                y1="63.4"
-                y2="132.7"
-                gradientUnits="userSpaceOnUse"
-            >
-                <stop offset="0" stopColor="#fbbf24"></stop>
-                <stop offset=".5" stopColor="#fbbf24"></stop>
-                <stop offset="1" stopColor="#f59e0b"></stop>
-            </linearGradient>
-            <symbol id="meteoconsExtremeDayRainFill6" viewBox="0 0 196 196">
-                <circle
-                    cx="98"
-                    cy="98"
-                    r="40"
-                    fill="url(#meteoconsExtremeDayRainFill5)"
-                    stroke="#f8af18"
-                    stroke-miterlimit="10"
-                    stroke-width="4"
-                ></circle>
-                <path
-                    fill="none"
-                    stroke="#fbbf24"
-                    stroke-linecap="round"
-                    stroke-miterlimit="10"
-                    stroke-width="12"
-                    d="M98 31.4V6m0 184v-25.4M145.1 51l18-17.9M33 163l18-17.9M51 51L33 33m130.1 130.1l-18-18M6 98h25.4M190 98h-25.4"
-                >
-                    <animateTransform
-                        additive="sum"
-                        attributeName="transform"
-                        dur="6s"
-                        repeatCount="indefinite"
-                        type="rotate"
-                        values="0 98 98; 45 98 98"
-                    ></animateTransform>
-                </path>
-            </symbol>
-            <symbol id="meteoconsExtremeDayRainFill7" viewBox="0 0 200.3 126.1">
-                <path
-                    fill="url(#meteoconsExtremeDayRainFill0)"
-                    stroke="#848b98"
-                    stroke-miterlimit="10"
-                    d="M.5 93.2a32.4 32.4 0 0 0 32.4 32.4h129.8v-.1l2.3.1a34.8 34.8 0 0 0 6.5-68.9a32.4 32.4 0 0 0-48.5-33a48.6 48.6 0 0 0-88.6 37.1h-1.5A32.4 32.4 0 0 0 .5 93.1Z"
-                ></path>
-            </symbol>
-            <symbol id="meteoconsExtremeDayRainFill8" viewBox="0 0 350 222">
-                <path
-                    fill="url(#meteoconsExtremeDayRainFill1)"
-                    stroke="#5b6472"
-                    stroke-miterlimit="10"
-                    stroke-width="6"
-                    d="m291 107l-2.5.1A83.9 83.9 0 0 0 135.6 43A56 56 0 0 0 51 91a56.6 56.6 0 0 0 .8 9A60 60 0 0 0 63 219l4-.2v.2h224a56 56 0 0 0 0-112Z"
-                ></path>
-            </symbol>
-            <symbol id="meteoconsExtremeDayRainFill9" viewBox="0 0 398 222">
-                <use width="200.3" height="126.1" href="#meteoconsExtremeDayRainFill7" transform="translate(198 27)">
-                    <animateTransform
-                        additive="sum"
-                        attributeName="transform"
-                        dur="6s"
-                        repeatCount="indefinite"
-                        type="translate"
-                        values="-9 0; 9 0; -9 0"
-                    ></animateTransform>
-                </use>
-                <use width="350" height="222" href="#meteoconsExtremeDayRainFill8">
-                    <animateTransform
-                        additive="sum"
-                        attributeName="transform"
-                        dur="6s"
-                        repeatCount="indefinite"
-                        type="translate"
-                        values="-18 0; 18 0; -18 0"
-                    ></animateTransform>
-                </use>
-            </symbol>
-            <symbol id="meteoconsExtremeDayRainFilla" viewBox="0 0 410.8 258">
-                <use width="196" height="196" href="#meteoconsExtremeDayRainFill6"></use>
-                <use
-                    width="398"
-                    height="222"
-                    href="#meteoconsExtremeDayRainFill9"
-                    transform="translate(12.84 36)"
-                ></use>
-            </symbol>
-            <symbol id="meteoconsExtremeDayRainFillb" viewBox="0 0 129 57">
-                <path
-                    fill="url(#meteoconsExtremeDayRainFill2)"
-                    stroke="#0a5ad4"
-                    stroke-miterlimit="10"
-                    d="M8.5 56.5a8 8 0 0 1-8-8v-40a8 8 0 0 1 16 0v40a8 8 0 0 1-8 8Z"
-                    opacity="0"
-                >
-                    <animateTransform
-                        id="meteoconsExtremeDayRainFillc"
-                        additive="sum"
-                        attributeName="transform"
-                        begin="0s; x1.end+.33s"
-                        dur=".67s"
-                        type="translate"
-                        values="0 -60; 0 60"
-                    ></animateTransform>
-                    <animate
-                        id="meteoconsExtremeDayRainFilld"
-                        attributeName="opacity"
-                        begin="0s; y1.end+.33s"
-                        dur=".67s"
-                        keyTimes="0; .25; 1"
-                        values="0; 1; 0"
-                    ></animate>
-                </path>
-                <path
-                    fill="url(#meteoconsExtremeDayRainFill3)"
-                    stroke="#0a5ad4"
-                    stroke-miterlimit="10"
-                    d="M64.5 56.5a8 8 0 0 1-8-8v-40a8 8 0 0 1 16 0v40a8 8 0 0 1-8 8Z"
-                    opacity="0"
-                >
-                    <animateTransform
-                        id="meteoconsExtremeDayRainFille"
-                        additive="sum"
-                        attributeName="transform"
-                        begin=".33s; x2.end+.33s"
-                        dur=".67s"
-                        type="translate"
-                        values="0 -60; 0 60"
-                    ></animateTransform>
-                    <animate
-                        id="meteoconsExtremeDayRainFillf"
-                        attributeName="opacity"
-                        begin=".33s; y2.end+.33s"
-                        dur=".67s"
-                        keyTimes="0; .25; 1"
-                        values="0; 1; 0"
-                    ></animate>
-                </path>
-                <path
-                    fill="url(#meteoconsExtremeDayRainFill4)"
-                    stroke="#0a5ad4"
-                    stroke-miterlimit="10"
-                    d="M120.5 56.5a8 8 0 0 1-8-8v-40a8 8 0 0 1 16 0v40a8 8 0 0 1-8 8Z"
-                    opacity="0"
-                >
-                    <animateTransform
-                        id="meteoconsExtremeDayRainFillg"
-                        additive="sum"
-                        attributeName="transform"
-                        begin="-.33s; x3.end+.33s"
-                        dur=".67s"
-                        type="translate"
-                        values="0 -60; 0 60"
-                    ></animateTransform>
-                    <animate
-                        id="meteoconsExtremeDayRainFillh"
-                        attributeName="opacity"
-                        begin="-.33s; y3.end+.33s"
-                        dur=".67s"
-                        keyTimes="0; .25; 1"
-                        values="0; 1; 0"
-                    ></animate>
-                </path>
-            </symbol>
-        </defs>
-        <use width="410.8" height="258" href="#meteoconsExtremeDayRainFilla" transform="translate(56 109)"></use>
-        <use width="129" height="57" href="#meteoconsExtremeDayRainFillb" transform="translate(191.5 343.5)"></use>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+        width="30"
+        height="30"
+        viewBox="0 0 256 256"
+        xml:space="preserve"
+    >
+        <defs></defs>
+        <g
+            style="
+                stroke: none;
+                stroke-width: 0;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: none;
+                fill-rule: nonzero;
+                opacity: 1;
+            "
+            transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+        >
+            <path
+                d="M 45 63.785 c -10.358 0 -18.786 -8.427 -18.786 -18.785 S 34.642 26.214 45 26.214 S 63.785 34.642 63.785 45 S 55.358 63.785 45 63.785 z"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(255, 216, 51);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+            />
+            <rect
+                x="43"
+                y="0"
+                rx="0"
+                ry="0"
+                width="4"
+                height="22.34"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(237, 142, 47);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+            />
+            <rect
+                x="43"
+                y="67.66"
+                rx="0"
+                ry="0"
+                width="4"
+                height="22.34"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(237, 142, 47);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+            />
+            <rect
+                x="0"
+                y="43"
+                rx="0"
+                ry="0"
+                width="22.34"
+                height="4"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(237, 142, 47);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+            />
+            <rect
+                x="67.66"
+                y="43"
+                rx="0"
+                ry="0"
+                width="22.34"
+                height="4"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(237, 142, 47);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+            />
+            <rect
+                x="57.75"
+                y="19.08"
+                rx="0"
+                ry="0"
+                width="22.34"
+                height="4"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(237, 142, 47);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(0.7071 -0.7071 0.7071 0.7071 5.2803 54.908) "
+            />
+            <rect
+                x="9.91"
+                y="66.92"
+                rx="0"
+                ry="0"
+                width="22.34"
+                height="4"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(237, 142, 47);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(0.7071 -0.7071 0.7071 0.7071 -42.5595 35.092) "
+            />
+            <rect
+                x="19.08"
+                y="9.91"
+                rx="0"
+                ry="0"
+                width="4"
+                height="22.34"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(237, 142, 47);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(0.7071 -0.7071 0.7071 0.7071 -8.7317 21.0801) "
+            />
+            <rect
+                x="66.92"
+                y="57.75"
+                rx="0"
+                ry="0"
+                width="4"
+                height="22.34"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(237, 142, 47);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(0.7071 -0.7071 0.7071 0.7071 -28.5476 68.9199) "
+            />
+            <rect
+                x="65.69"
+                y="33.12"
+                rx="0"
+                ry="0"
+                width="6.34"
+                height="4"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(255, 216, 51);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(0.9238 -0.3828 0.3828 0.9238 -8.1974 29.0362) "
+            />
+            <rect
+                x="17.97"
+                y="52.88"
+                rx="0"
+                ry="0"
+                width="6.34"
+                height="4"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(255, 216, 51);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(0.9238 -0.3828 0.3828 0.9238 -19.4 12.2725) "
+            />
+            <rect
+                x="33.12"
+                y="17.97"
+                rx="0"
+                ry="0"
+                width="4"
+                height="6.34"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(255, 216, 51);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(0.9239 -0.3827 0.3827 0.9239 -5.4162 15.048) "
+            />
+            <rect
+                x="52.88"
+                y="65.69"
+                rx="0"
+                ry="0"
+                width="4"
+                height="6.34"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(255, 216, 51);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(0.9239 -0.3827 0.3827 0.9239 -22.174 26.2437) "
+            />
+            <rect
+                x="19.14"
+                y="31.94"
+                rx="0"
+                ry="0"
+                width="4"
+                height="6.34"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(255, 216, 51);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(0.3827 -0.9239 0.9239 0.3827 -19.3944 41.2062) "
+            />
+            <rect
+                x="66.86"
+                y="51.71"
+                rx="0"
+                ry="0"
+                width="4"
+                height="6.34"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(255, 216, 51);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(0.3827 -0.9239 0.9239 0.3827 -8.1955 97.5023) "
+            />
+            <rect
+                x="51.71"
+                y="19.14"
+                rx="0"
+                ry="0"
+                width="6.34"
+                height="4"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(255, 216, 51);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(0.3828 -0.9238 0.9238 0.3828 14.3458 63.7492) "
+            />
+            <rect
+                x="31.94"
+                y="66.86"
+                rx="0"
+                ry="0"
+                width="6.34"
+                height="4"
+                style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: rgb(255, 216, 51);
+                    fill-rule: nonzero;
+                    opacity: 1;
+                "
+                transform=" matrix(0.3828 -0.9238 0.9238 0.3828 -41.9435 74.9423) "
+            />
+        </g>
     </svg>
 </template>
 
 <script lang="ts">
 export default {
-    name: 'MeteoconsExtremeDayRainFill',
+    name: 'MeteoconsTimeNightFill',
 };
 </script>

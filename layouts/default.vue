@@ -24,7 +24,6 @@ const updateProgressBar = () => {
     const d = document.documentElement.scrollHeight;
     const c = window.innerHeight;
     const scrollPercent = ((s / (d - c)) * 100).toFixed(0);
-    console.log(scrollPercent);
     document.querySelector('#reading_progress').style.width = scrollPercent + 'vw';
 };
 </script>

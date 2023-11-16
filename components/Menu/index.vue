@@ -7,6 +7,9 @@ const localPath = useLocalePath();
             <NuxtLink activeClass="active" :to="localPath('/')">{{ $t('home') }}</NuxtLink>
         </li>
         <li>
+            <NuxtLink activeClass="active" :to="localPath('/shop')">{{ $t('shop') }}</NuxtLink>
+        </li>
+        <li>
             <NuxtLink activeClass="active" :to="localPath('/course')">{{ $t('course') }}</NuxtLink>
         </li>
         <li>
