@@ -1,7 +1,7 @@
 <template>
     <div>
         <div
-            class="w-full fixed top-0 border-b-2 z-10 bg-white dark:bg-slate-900 dark:text-white dark:border-slate-700"
+            class="w-full fixed top-0 border-b-2 z-10 bg-white dark:bg-slate-900 transition-colors duration-500 dark:text-white dark:border-slate-700"
         >
             <div id="reading_progress" class="absolute z-30 top-0"></div>
             <AppHeader />
