@@ -26,7 +26,7 @@ useSeoMeta({
                             class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-20 top-0"
                         ></span>
                     </div>
-                    <h2>{{ $t('heng_vina') }} {{ $t('founder') }}</h2>
+                    <h2 class="mt-2">{{ $t('heng_vina') }} {{ $t('founder') }}</h2>
                     <div class="my-2"></div>
                     <h2>{{ $t('like') }}</h2>
                 </div>
@@ -35,8 +35,11 @@ useSeoMeta({
                         <h2>{{ $t('blog_mission') }}</h2>
                         <hr class="mt-2 dark:border-slate-700" />
                         <div
-                            class="flex flex-col font-bold text-header mt-4 text-red-600 dark:text-yellow-400 capitalize"
+                            class="flex justify-center flex-col font-bold text-header mt-4 text-red-600 dark:text-yellow-400 capitalize"
                         >
+                            <NuxtLink class="flex items-center" activeClass="active" :to="localPath('/shop')">
+                                {{ $t('shop') }} <IconsNext />
+                            </NuxtLink>
                             <NuxtLink class="flex items-center" activeClass="active" :to="localPath('/course')">
                                 {{ $t('course') }} <IconsNext />
                             </NuxtLink>
