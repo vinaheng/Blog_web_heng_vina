@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@800&family=Roboto:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Khmer&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+.font_san_200 {
+  font-family: 'Khmer'
+}
 
 .text-header,
 h2,
