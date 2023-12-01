@@ -12,7 +12,7 @@ useSeoMeta({
                 <span class="m-8 dark:border-slate-700 border w-full"></span>
                 <h2 class="text-2xl lg:text-3xl">"{{ $t('why_girl_hate_me') }}"</h2>
                 <hr class="m-8 dark:border-slate-700" />
-                <img v-show="true" class="object-cover rounded-md shadow-md" src="~/assets/img/use_admin.jpg" alt="" />
+                <img v-show="true" class="object-cover rounded-md shadow-md" src="~/assets/img/use_admin.png" alt="" />
             </div>
             <div class="my-6">
                 <h2 class="lg:text-2xl text-xl my-8">{{ $t('about_title') }}</h2>
