@@ -6,7 +6,7 @@ useSeoMeta({
 </script>
 <template>
     <transition appear name="page">
-        <div v-show="true" class="max-w-[700px] m-auto p-5 pt-20 mt-14 dark:text-white">
+        <div v-show="true" class="max-w-[800px] m-auto p-5 pt-20 mt-14 dark:text-white">
             <div class="flex flex-col items-center">
                 <h2 class="lg:text-6xl text-4xl">{{ $t('about_us') }}</h2>
                 <span class="m-8 dark:border-slate-700 border w-full"></span>
@@ -16,7 +16,13 @@ useSeoMeta({
             </div>
             <div class="my-6">
                 <h2 class="lg:text-2xl text-xl my-8">{{ $t('about_title') }}</h2>
-                <span class="text-xl font_san_200">{{ $t('about_one') }}</span>
+                <span class="text-lg font_san_200">{{ $t('about_one') }}</span>
+            </div>
+            <div class="border-l-4 border-red-600 h-full pl-4 rounded-md">
+                <span class="text-lg font_san_200">"{{ $t('about_tow') }}"</span>
+            </div>
+            <div class="mt-8">
+                <span class="text-lg font_san_200">{{ $t('about_three') }}</span>
             </div>
         </div>
     </transition>

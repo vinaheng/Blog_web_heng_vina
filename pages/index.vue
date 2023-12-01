@@ -9,7 +9,7 @@ useSeoMeta({
 <template>
     <vue-scroll-indicator height="7px" color="#11998e" background="none"> </vue-scroll-indicator>
     <transition appear name="page">
-        <div v-show="true" class="max-w-[700px] m-auto flex flex-col justify-center p-5 pt-20 mt-14 dark:text-white">
+        <div v-show="true" class="max-w-[800px] m-auto flex flex-col justify-center p-5 pt-20 mt-14 dark:text-white">
             <img class="object-cover rounded-md max-h-[300px]" src="~/assets/img/front_cover.png" alt="" />
             <div class="mt-10 grid grid-cols-1 xl:grid-cols-3 gap-4 mb-10">
                 <div
@@ -26,8 +26,10 @@ useSeoMeta({
                             class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-20 top-0"
                         ></span>
                     </div>
-                    <h2 class="mt-2">{{ $t('heng_vina') }} {{ $t('founder') }}</h2>
-                    <div class="my-2"></div>
+                    <h2 class="mt-4">{{ $t('heng_vina') }} {{ $t('founder') }}</h2>
+                    <div class="mt-2 mb-1 flex-row flex">
+                        <span class="border-2 w-[40px] border-red-700 rounded-md"></span>
+                    </div>
                     <h2>{{ $t('like') }}</h2>
                 </div>
                 <div class="xl:col-span-2">
