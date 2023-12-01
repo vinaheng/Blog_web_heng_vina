@@ -34,7 +34,7 @@ useSeoMeta({
                 </div>
                 <div class="xl:col-span-2">
                     <div class="m-auto">
-                        <h2>{{ $t('blog_mission') }}</h2>
+                        <h2 class="text-justify">{{ $t('blog_mission') }}</h2>
                         <hr class="mt-2 dark:border-slate-700" />
                         <div
                             class="flex justify-center flex-col font-bold text-header mt-4 text-red-600 dark:text-yellow-400 capitalize"
@@ -88,7 +88,7 @@ useSeoMeta({
                 </a>
             </div>
             <hr class="m-10 dark:border-slate-700" />
-            <h2 class="flex justify-center text-xl">{{ $t('about_quote') }}</h2>
+            <h2 class="flex justify-center text-xl text-justify">{{ $t('about_quote') }}</h2>
         </div>
     </transition>
 </template>

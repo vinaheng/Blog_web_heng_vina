@@ -14,15 +14,15 @@ useSeoMeta({
                 <hr class="m-8 dark:border-slate-700" />
                 <img v-show="true" class="object-cover rounded-md shadow-md" src="~/assets/img/use_admin.png" alt="" />
             </div>
-            <div class="my-6">
+            <div class="my-6 text-justify">
                 <h2 class="lg:text-2xl text-xl my-8">{{ $t('about_title') }}</h2>
-                <span class="text-lg font_san_200">{{ $t('about_one') }}</span>
+                <span class="text-lg font_san_200 text-justify leading-9" v-html="$t('about_one')"></span>
             </div>
-            <div class="border-l-4 border-red-600 h-full pl-4 rounded-md">
-                <span class="text-lg font_san_200">"{{ $t('about_tow') }}"</span>
+            <div class="border-l-4 border-red-600 h-full pl-4 rounded-md text-justify">
+                <span class="text-lg font_san_200 leading-9" v-html="$t('about_tow')"></span>
             </div>
-            <div class="mt-8">
-                <span class="text-lg font_san_200">{{ $t('about_three') }}</span>
+            <div class="mt-8 text-justify">
+                <span class="text-lg font_san_200 leading-9 tracking-wide" v-html="$t('about_three')"></span>
             </div>
         </div>
     </transition>
