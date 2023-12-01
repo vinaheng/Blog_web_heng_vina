@@ -15,7 +15,7 @@ useSeoMeta({
                 <img v-show="true" class="object-cover rounded-md shadow-md" src="~/assets/img/use_admin.png" alt="" />
             </div>
             <div class="my-6 text-justify">
-                <h2 class="lg:text-2xl text-xl my-8">{{ $t('about_title') }}</h2>
+                <h2 class="lg:text-2xl text-xl my-8 font_san_200" v-html="$t('about_title')"></h2>
                 <span class="text-lg font_san_200 text-justify leading-9" v-html="$t('about_one')"></span>
             </div>
             <div class="border-l-4 border-red-600 h-full pl-4 rounded-md text-justify">
